@@ -648,6 +648,12 @@ E.g. the pattern $a*c$ appears in the text $abccaacc$ at exactly three positions
 We create the exact same polynomials, except that we set $b_i = 0$ if $P[m-i-1] = *$.
 If $x$ is the number of wildcards in $P$, then we will have a match of $P$ in $T$ at index $i$ if $c_{m-1+i} = m - x$.
 
+## NTT notes: see problem 30-6 in CLRS for details, keeping in mind that
+>  2187 and  410692747 are inverses and 2^26th roots of 1 mod (7<<26)+1
+>  15311432 and  469870224 are inverses and 2^23rd roots of 1 mod (119<<23)+1
+>  440564289 and 1713844692 are inverses and 2^27th roots of 1 mod (15<<27)+1
+>  125 and 2267742733 are inverses and 2^30th roots of 1 mod (3<<30)+1
+
 ## Practice problems
 
 - [SPOJ - POLYMUL](http://www.spoj.com/problems/POLYMUL/)
